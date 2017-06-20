@@ -1,0 +1,52 @@
+.inscription{
+	height: 100vh;
+	&__bloc{
+		background-color: $black;
+		color: $white;
+		width: 500px;
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		padding: 4em;
+		.main__heading2{
+			font-size: 2em;
+			font-weight: 600;
+			width: 100%;
+			margin-bottom: 1.5em;
+		}
+		.form{
+			.avertissement{
+				color: red;
+				margin: 0.5em 0;
+			}
+			&__label{
+				display: block;
+				margin-bottom: 0.5em;
+			}
+			&__input{
+				border: 2px solid transparent;
+				padding: 1em;
+				width: 100%;
+				margin-bottom: 2em;
+			}
+			&__input:hover,
+			&__input:focus{
+				border: 2px solid $lightBrown;
+			}
+			&__submit{
+				margin-top: 1em;
+				padding: 0.5em 1em;
+				width: 50%;
+				font-size: 1em;
+				transition: all 0.2s ease-in-out;
+				border: none;
+			}
+			&__submit:hover,
+			&__submit:focus{
+				color: $white;
+				background-color: $brown;
+			}
+		}
+	}
+}

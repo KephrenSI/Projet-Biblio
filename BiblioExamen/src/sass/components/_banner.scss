@@ -1,0 +1,49 @@
+.banner{
+	height: 45vh;
+	background-image: url('../img/banner.jpg');
+	background-position: center 80%;
+	position: relative;
+	.mainbanner__heading2{
+		font-size: 5em;
+		color: $lightBrown;
+		font-weight: 800;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		line-height: 3.2em;
+		text-shadow: 2px 2px $brown;
+	}
+	.banner__heading2{
+		font-size: 4em;
+		color: $lightBrown;
+		font-weight: 800;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		line-height: 4em;
+		text-shadow: 2px 2px $brown;
+	}
+	.adminbanner__heading2{
+		font-size: 4em;
+		color: $lightBrown;
+		font-weight: 800;
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		line-height: 4em;
+		text-shadow: 2px 2px $brown;
+	}
+	.singlebanner__heading2{
+		font-size: 3em;
+		color: $lightBrown;
+		font-weight: 800;
+		width: 80%;
+		text-align: center;
+		line-height: 1.35em;
+		text-shadow: 2px 2px $brown;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}

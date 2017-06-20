@@ -1,0 +1,20 @@
+.notfoundpage{
+	// background-color:#ccc;
+	height: 65vh;
+	text-align: center;
+	.emoji {
+	  	font-size: 10em;
+	  	margin: 0.5em 0;
+	}
+	.other {
+		font-size: 1.5em;
+		&__link{
+			text-decoration: none;
+			color: $lightBrown;
+		}
+		&__link:hover,
+		&__link:focus{
+			color: $darkBrown;
+		}
+	}
+}

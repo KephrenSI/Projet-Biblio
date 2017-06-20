@@ -1,0 +1,181 @@
+.livre{
+	padding: 2em 2.5%;
+	display: flex;
+	flex-wrap: wrap;
+	.main__heading2{
+		font-size: 2em;
+		font-weight: 600;
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	&__bloc{
+		width: 25%;
+		margin-right: 5%;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__preamble{
+		width: 60%;
+		line-height: 1.35em;
+		margin-bottom: 1.5em;
+		.main__heading3{
+			font-size: 1.5em;
+			font-weight: 600;
+			width: 100%;
+			margin-bottom: 1em;
+		}
+		&--txt{
+			max-width: 650px;
+			margin-bottom: 1em;
+		}
+	}
+	&__infos{
+		width: 100%;
+		margin-top: 4em;
+		.list{
+			display: flex;
+			&__elt:first-child,
+			&__elt:nth-child(2){
+				width: 45%;
+				.sublist{
+					text-align: left;
+					&__elt{
+						margin-top: 1em;
+						&--link{
+							color: $lightBrown; 
+							text-decoration: none;
+							transition: all 0.2s ease-in-out;
+						}
+						&--link:hover,
+						&--link:focus{
+							color: $darkBrown; 
+						}
+					}
+				}
+			}
+			&__elt:nth-child(3){
+				width: 10%;
+			}
+			&__elt:nth-child(2){
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.comment{
+	padding: 2em 2.5%;
+	display: flex;
+	flex-wrap: wrap;
+	.main__heading2{
+		width: 100%;
+		font-size: 2em;
+		font-weight: 600;
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	.commentaires{
+		width: 55%;
+		margin-right: 5%;
+		margin-bottom: 2em;
+		.main__heading3{
+			font-size: 1.5em;
+			font-weight: 600;
+			width: 100%;
+			margin-bottom: 1em;
+		}
+		&__bloc{
+			margin-bottom: 2em;
+			.name{
+				display: inline-block;
+				width: 50%;
+				text-indent: 1em;
+				font-size: 1.2em;
+				font-weight: 600;
+				margin-bottom: 0.5em;
+			}
+			.date{
+				display: inline-block;
+				width: 35%;
+				text-align: right;
+				font-size: 0.8em;
+			}
+			.commentaire{
+				background-color: lighten( $grey, 50%);
+				max-width: 580px;
+				padding: 1.5em 2em;
+				border-radius: 25px;
+				&__txt{
+					margin-bottom: 1em;
+					line-height: 1.35em;
+				}
+				&__txt:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.ecrire{
+		margin-left: 5%;
+		width: 35%;
+		.main__heading3{
+			font-size: 1.5em;
+			font-weight: 600;
+			width: 100%;
+			margin-bottom: 1em;
+		}
+		.avertissement{
+			color: red;
+			margin: 0.5em 0;
+		}
+		.label{
+			display: block;
+			margin-bottom: 0.5em;
+			&--name{
+
+			}
+			&--txt{
+
+			}
+		}
+		.input{
+			display: block;
+			color: lighten( $black, 20%);
+			font-size: 0.8em;
+			font-family: inherit;
+			margin-bottom: 2em;
+			padding: 0.5em 1em;
+			width: 100%;
+			border: 2px solid transparent;
+			transition: all 0.2s ease-in-out;
+			&--name{
+
+			}
+			&--txt{
+				resize: vertical;
+				margin-bottom: 3em;
+			}
+			&--name:hover,
+			&--name:focus,
+			&--txt:hover,
+			&--txt:focus{
+				border: 2px solid $lightBrown;
+			}
+			&--send{
+				background-color: $lightBrown;
+				color: $white;
+				border: none;
+				cursor: pointer;
+				padding: 1em;
+				width: 50%;
+				transition: all 0.2s ease-in-out;
+			}
+			&--send:hover,
+			&--send:focus{
+				background-color: $darkBrown;
+			}
+
+		}
+	}
+}

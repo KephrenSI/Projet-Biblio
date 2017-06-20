@@ -1,0 +1,59 @@
+/* Képhren/Projet
+*
+* /src/sass/styles.scss - Main style for projet
+*
+* coded by Képhren SIMONIS
+* started at 22/02/2017
+*/
+
+// 1. Settings - Variables globales
+@import "settings/paths";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+@import "tools/utils";
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "objects/header";
+@import "objects/footer";
+@import "objects/auteurs";
+@import "objects/auteur";
+@import "objects/editeurs";
+@import "objects/editeur";
+@import "objects/livres";
+@import "objects/livre";
+@import "objects/connection";
+@import "objects/inscription";
+@import "objects/banner";
+@import "objects/lasteditors";
+@import "objects/lastauthors";
+@import "objects/lastbooks";
+@import "objects/404";
+@import "objects/admin";
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/header";
+@import "components/footer";
+@import "components/auteurs";
+@import "components/auteur";
+@import "components/editeurs";
+@import "components/editeur";
+@import "components/livres";
+@import "components/livre";
+@import "components/connection";
+@import "components/inscription";
+@import "components/banner";
+@import "components/lasteditors";
+@import "components/lastauthors";
+@import "components/lastbooks";
+@import "components/404";
+@import "components/admin";

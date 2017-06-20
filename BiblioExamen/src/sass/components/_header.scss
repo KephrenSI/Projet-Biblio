@@ -1,0 +1,59 @@
+.header{
+	.menu{
+		display: flex;
+		flex-direction: column;
+		.membre{
+			padding: 0 2.5%;
+			display: flex;
+			background-color: $black;
+			justify-content: flex-end;
+			font-size: 0.8em;
+			&__elt{
+				&--link{
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1rem;
+					display: inline-block;
+					color: $white;
+					text-decoration: none;
+				}
+				&--link:hover,
+				&--link:focus{
+					color: $lightBrown;
+				}
+				.active{
+					color: $lightBrown;
+				}
+			}
+
+			&__elt:first-child{
+				margin-right: 1em;
+			}
+		}
+		.list{
+			padding: 0 2.5%;
+			display: flex;
+			background-color: $lightBrown;
+			justify-content: flex-end;
+			font-size: 1.2em;
+			&__elt{
+				&--link{
+					transition: all 0.2s ease-in-out;
+					padding: 2em 1rem;
+					display: inline-block;
+					color: $white;
+					text-decoration: none;
+				}
+				&--link:hover,
+				&--link:focus{
+					color: $black;
+				}
+				.active{
+					color: $black;
+				}
+			}
+			&__elt:nth-child(-n+3){
+				margin-right: 1em;
+			}
+		}
+	}  
+}

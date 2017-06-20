@@ -1,0 +1,50 @@
+.auteurs{
+	padding: 2em 2.5%;
+	display: flex;
+	flex-wrap: wrap;
+	.main__heading2{
+		font-size: 2em;
+		font-weight: 600;
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	&__infos{
+		width: 30%;
+		margin-bottom: 3em;
+		.main__heading3{
+			font-size: 1.5em;
+			font-weight: 400;
+			margin-bottom: 1em;
+			min-height: 2em;
+		}
+	}
+	&__infos:nth-child(3n+3){
+		margin: 0 5%;
+	}
+	&__bloc{
+		float: left;
+		width: 50%;
+		margin-bottom: 0.5em;
+		margin-right: 1em;
+		&--img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__preamble{
+		min-height: 12em;
+		line-height: 1.35em;
+		margin-bottom: 1.5em;
+	}
+	&__link{
+		transition: all 0.2s ease-in-out;
+		background-color: $lightBrown;
+		color: $white;
+		text-decoration: none;
+		padding: 0.5em 1em;
+	}
+	&__link:hover,
+	&__link:focus{
+		background-color: $darkBrown;
+	}
+}

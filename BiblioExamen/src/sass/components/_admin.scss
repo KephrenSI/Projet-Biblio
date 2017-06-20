@@ -1,0 +1,121 @@
+.admin{
+	padding: 2em 2.5%;
+	width: 55%;
+	margin-right: 5%;
+	margin-bottom: 2em;
+	.main__heading2{
+		font-size: 2em;
+		font-weight: 600;
+		width: 100%;
+		margin-bottom: 1.5em;
+	}
+	.count{
+		margin-bottom: 2em;
+		font-size: 1.2em;
+		font-weight: 600;
+	}
+	&__bloc{
+		margin-bottom: 1em;
+		.name{
+			display: inline-block;
+			width: 50%;
+			text-indent: 1em;
+			font-size: 1.2em;
+			font-weight: 600;
+			margin-bottom: 0.5em;
+		}
+		.date{
+			display: inline-block;
+			width: 35%;
+			text-align: right;
+			font-size: 0.8em;
+		}
+		.commentaire{
+			background-color: lighten( $grey, 50%);
+			max-width: 580px;
+			padding: 1.5em 2em;
+			border-radius: 25px;
+			&__txt{
+				margin-bottom: 1em;
+				line-height: 1.35em;
+			}
+			&__txt:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.single{
+		transition: all 0.2s ease-in-out;
+		background-color: $lightBrown;
+		color: $white;
+		text-decoration: none;
+		padding: 0.5em 1em;
+		display: inline-block;
+		width: 30%;
+		text-align: center;
+		margin-bottom: 3em;
+	}
+	.single:hover,
+	.single:focus{
+		background-color: $darkBrown;
+	}
+	.deleteComment{
+		display: inline-block;
+		width: 60%;
+		text-align: right;
+	}
+	.deleteComment button{
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		color: $darkBrown;
+		padding: 0.5em 1em;
+		border: none;
+		background-color: transparent;
+		text-align: center;
+		margin-bottom: 3em;
+		font-size: 1em;
+		position: relative;
+		top: -3em;
+		right: 0px;
+	}
+	.deleteComment button:hover,
+	.deleteComment button:focus{
+		color: red;
+	}
+	.nothing{
+
+	}
+	.alllivres{
+		margin-top: 3em;
+		.all{
+			padding: 1em 1.6em;
+			background-color: $lightBrown;
+			color: $white;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out;
+		}
+		.all:hover,
+		.all:focus{
+			background-color: $darkBrown;
+		}
+	}
+}
+.comment{
+	.txt{
+		margin-bottom: 1em;
+	}
+	.link{
+		transition: all 0.2s ease-in-out;
+		background-color: $lightBrown;
+		color: $white;
+		text-decoration: none;
+		padding: 0.5em 1em;
+		display: block;
+		width: 60%;
+		text-align: center;
+	}
+	.link:hover,
+	.link:focus{
+		background-color: $darkBrown;
+	}
+}
