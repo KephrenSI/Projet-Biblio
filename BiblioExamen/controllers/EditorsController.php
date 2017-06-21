@@ -5,7 +5,7 @@ use Model\Editors;
 use Model\Books;
 use Model\Authors;
 
-class EditorsController
+class EditorsController extends Controller
 {
     private $editors_model = null;
 
@@ -19,7 +19,7 @@ class EditorsController
     public function index()
     {
         $allEditors = $this -> editors_model -> getEditorsOrderById();
-        $view = 'indexEditors.php';
+        $view = 'views/' . $GLOBALS[ 'a' ] . $GLOBALS[ 'r' ] . '.php';
 
         return [
             'page_title' => 'Editors | Bibliothèque',

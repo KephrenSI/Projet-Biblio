@@ -5,7 +5,7 @@ use Model\Authors;
 use Model\Books;
 use Model\Editors;
 
-class AuthorsController
+class AuthorsController extends Controller
 {
     private $authors_model = null;
 
