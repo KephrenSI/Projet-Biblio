@@ -19,7 +19,7 @@ class AuthorsController extends Controller
     public function index() {
 
         $allAuthors = $this -> authors_model -> getAuthorsOrderByName();
-        $view = 'views/' . $GLOBALS[ 'a' ] . $GLOBALS[ 'r' ] . '.php';
+        $view = 'views/' . 'indexAuthors.php';
 
         return [
             'page_title' => 'Authors | Bibliothèque',

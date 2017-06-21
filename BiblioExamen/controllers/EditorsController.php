@@ -19,7 +19,7 @@ class EditorsController extends Controller
     public function index()
     {
         $allEditors = $this -> editors_model -> getEditorsOrderById();
-        $view = 'views/' . $GLOBALS[ 'a' ] . $GLOBALS[ 'r' ] . '.php';
+        $view = 'views/' . 'indexEditors.php';
 
         return [
             'page_title' => 'Editors | Bibliothèque',

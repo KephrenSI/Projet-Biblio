@@ -19,7 +19,7 @@ class BooksController extends Controller
     public function index()
     {
         $books = $this -> books_model -> all();
-        $view = 'views/' . $GLOBALS[ 'a' ] . $GLOBALS[ 'r' ] . '.php';
+        $view = 'views/' . 'indexBooks.php';
 
         return [
             'page_title' => 'Books | Bibliothèque',

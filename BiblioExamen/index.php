@@ -19,8 +19,9 @@ if ( !in_array( $method.'/'.$a.'/'.$r, $routes ) ){
 
 $controller_name = '\Controller\\'.ucfirst( $r ).'Controller';
 
-$container = new \Illuminate\Container\container();
+$container = new \Illuminate\Container\Container();
 $controller = $container -> make( $controller_name );
+// $controller = new $controller_name();
 
 $datas = call_user_func( [ $controller, $a ] );
 
